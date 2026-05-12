@@ -21,8 +21,22 @@
             overflow: hidden;
         }
         h1 {
-            font-size: 5rem;
+            font-size: 8rem;
             text-align: center;
+            background: linear-gradient(
+                to right,
+                #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 5s linear infinite;
+            background-size: 200% auto;
+        }
+        @keyframes rainbow {
+            to {
+                background-position: 200% center;
+            }
         }
     </style>
 </head>
